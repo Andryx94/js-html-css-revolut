@@ -1,5 +1,6 @@
 /* TODOLIST */
-/* centrare verticalmente menù */
+/* aggiungere fontawesome IT */
+/* aggiungere dropdown menù */
 
 /* Generali */
 body {
@@ -13,6 +14,8 @@ img {
 }
 
 ul {
+  height: 30px;
+  line-height: 30px;
   padding-top: 30px;
   padding-left: 0;
 }
@@ -36,25 +39,28 @@ button {
   background-color: #eb008d;
   border: none;
   color: white;
-  padding: 5px 15px;
+  padding: 5px 20px;
 }
 
 .container {
   max-width: 1220px;
 }
+/* fine generali */
 
+/* HEADER */
+/* header sinistro */
 #header-left {
   text-transform: uppercase;
-}
-
-#header-right {
-  text-align: right;
 }
 
 #personale {
   color: black;
 }
-/* fine generali */
+
+/* header destro */
+#header-right {
+  text-align: right;
+}
 
 /* versione mobile */
 @media all and (max-width: 767px) {
