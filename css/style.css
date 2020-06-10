@@ -5,12 +5,13 @@
 /* Generali */
 body {
 font-family: 'Roboto', sans-serif;
+font-weight: 600;
 font-size: 16px;
 }
 
 img {
   width: 100px;
-  padding-top: 0;
+  padding: 10px 0;
 }
 
 ul {
@@ -21,29 +22,63 @@ ul {
 }
 
 li {
+  position: relative;
   display: inline-block;
   list-style-type: none;
   padding-right: 20px;
 }
 
-a {
-  color: rgba(0, 0, 0, 0.4);
+a, #lingua {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 a:hover {
   text-decoration: none;
+  color: #eb008d;
 }
 
 button {
   border-radius: 50px;
   background-color: #eb008d;
-  border: none;
+  border: 1px solid #eb008d;;
   color: white;
   padding: 5px 20px;
 }
 
+button:hover {
+  background-color: white;
+  border: 1px solid #eb008d;
+  color: #eb008d;
+}
+
 .container {
   max-width: 1220px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  display: none;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0px 3px 7px rgba(0,0,0,0.2);
+}
+
+.dropdown.active{
+  display: flex;
+}
+
+.dropdown ul{
+  height: 100%;
+  padding-top: 0;
+  text-align: left;
+}
+
+.dropdown li {
+  padding: 0 15px;
+  padding-bottom: 5px;
+  white-space: nowrap;
 }
 /* fine generali */
 
@@ -62,17 +97,18 @@ button {
   text-align: right;
 }
 
-/* versione mobile */
-@media all and (max-width: 767px) {
+#nuovo {
+  position: relative;
 }
-/* fine versione mobile */
 
-/* versione tablet */
-@media all and (min-width: 768px) and (max-width:991px){
+#nuovo::after {
+  position: absolute;
+  content: "Nuovo";
+  top: -70%;
+  color: #eb008d;
+  font-size: 10px;
 }
-/* fine versione tablet  */
 
-/* versione desktop */
-@media all and (min-width: 992px){
+#lingua {
+  font-size: 10px;
 }
-/* fine versione desktop */
