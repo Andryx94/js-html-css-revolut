@@ -7,21 +7,21 @@ $(document).ready(
     //azione passaggio mouse
     dropdownMenu.mouseenter(
       function() {
-        $(this).children().addClass("active");
+        $(this).children(".dropdown").addClass("active");
       }
     )
 
     //azione uscita mouse
     dropdownMenu.mouseleave(
       function() {
-        $(this).children().removeClass("active");
+        $(this).children(".dropdown").removeClass("active");
       }
     )
 
     //azione click mouse
     dropdownMenu.click(
       function() {
-        $(this).children().toggleClass("active");
+        $(this).children(".dropdown").toggleClass("active");
       }
     )
 
