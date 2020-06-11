@@ -1,35 +1,39 @@
 $(document).ready(
   function() {
+    //variabili generali
+    var dropdownMenu = $("#header-right ul .dropdown-menu-ms");
+    var selettoreLingue = $("#selettore-lingua");
+
     //azione passaggio mouse
-    $("#header-right li").mouseenter(
+    dropdownMenu.mouseenter(
       function() {
         $(this).children().addClass("active");
       }
     )
 
     //azione uscita mouse
-    $("#header-right li").mouseleave(
+    dropdownMenu.mouseleave(
       function() {
         $(this).children().removeClass("active");
       }
     )
 
     //azione click mouse
-    $("#header-right li").click(
+    dropdownMenu.click(
       function() {
         $(this).children().toggleClass("active");
       }
     )
 
     //azione passaggio mouse selettore lingua
-    $("#selettore-lingua").mouseenter(
+    selettoreLingue.mouseenter(
       function() {
         scambioIcona($("#lingua"));
       }
     )
 
     //azione uscita mouse selettore lingua
-    $("#selettore-lingua").mouseleave(
+    selettoreLingue.mouseleave(
       function() {
         scambioIcona($("#lingua"));
       }

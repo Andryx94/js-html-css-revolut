@@ -14,20 +14,24 @@
     <!-- Header -->
     <div class="container">
       <!-- Header sinistro -->
-      <div id="header-left" class="col-xs-4">
+      <nav id="header-left" class="col-xs-4">
         <ul>
           <li><img src="img/logo-revolut.png" alt="logo revolut"></li>
           <li><a id="personale" href="#">Personale</a></li>
           <li><a href="#">Business</a></li>
         </ul>
-      </div>
+      </nav>
       <!-- fine header sinistro -->
 
       <!-- Header destro -->
-      <div id="header-right" class="col-xs-8">
+      <nav id="header-right" class="col-xs-8">
         <ul>
+          <!-- Tariffazione -->
           <li><a href="#">Tariffazione</a></li>
-          <li>
+          <!-- fine tariffazione -->
+
+          <!-- Conti -->
+          <li class="dropdown-menu-ms">
             <a href="#">Conti</a>
             <div class="dropdown">
               <ul>
@@ -38,8 +42,14 @@
               </ul>
             </div>
           </li>
+          <!-- fine conti -->
+
+          <!-- Prodotti -->
           <li><a href="#">Prodotti</a></li>
-          <li>
+          <!-- fine prodotti -->
+
+          <!-- Azienda -->
+          <li class="dropdown-menu-ms">
             <a href="#">Azienda</a>
             <div class="dropdown">
               <ul>
@@ -51,7 +61,10 @@
               </ul>
             </div>
           </li>
-          <li>
+          <!-- fine azienda -->
+
+          <!-- aiuto -->
+          <li class="dropdown-menu-ms">
             <a href="#">Aiuto</a>
             <div class="dropdown">
               <ul>
@@ -61,15 +74,21 @@
                 <li><a href="#">Stato di sistema</a></li>
               </ul>
             </div>
-
           </li>
+          <!-- fine aiuto -->
+
+          <!-- selettore lingue -->
           <li id="selettore-lingua">
             <a href="#">IT</a>
             <i id="lingua" class="fas fa-chevron-down"></i>
           </li>
-          <li><button type="button" name="button">Scarica l'app</button> </li>
+          <!-- fine selettore lingue -->
+
+          <!-- bottone scarica app -->
+          <li><button type="button" name="button">Scarica l'app</button></li>
+          <!-- fine bottone scarica app -->
         </ul>
-      </div>
+      </nav>
       <!-- fine header destro -->
     </div>
     <!-- fine header -->

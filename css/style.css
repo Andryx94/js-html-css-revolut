@@ -1,17 +1,8 @@
-/* TODOLIST */
-/* aggiungere fontawesome IT */
-/* aggiungere dropdown menù */
-
 /* Generali */
 body {
 font-family: 'Roboto', sans-serif;
 font-weight: 600;
 font-size: 16px;
-}
-
-img {
-  width: 100px;
-  padding: 10px 0;
 }
 
 ul {
@@ -86,6 +77,11 @@ button:hover {
 /* header sinistro */
 #header-left {
   text-transform: uppercase;
+}
+
+#header-left img {
+  width: 100px;
+  padding: 10px 0;
 }
 
 #personale {
